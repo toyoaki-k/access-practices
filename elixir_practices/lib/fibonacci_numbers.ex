@@ -5,7 +5,8 @@ defmodule FibonacciNumbers do
   @second_number 2
   @sum_accumlator 0
 
-  def calculate_sum_of_even_numbers(max_value) do
+  @spec calculate_sum_of_even_numbers(integer) :: integer
+  def calculate_sum_of_even_numbers(max_value) when is_number(max_value) do
     sum_of_even_numbers(@first_number, @second_number, @sum_accumlator, max_value)
   end
 
