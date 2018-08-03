@@ -4,5 +4,6 @@ defmodule FibonacciNumbersTest do
 
   test "sum of even numbers" do
     assert FibonacciNumbers.calculate_sum_of_even_numbers(4_000_000) == 4_613_732
+    assert FibonacciNumbers.calculate_sum_of_even_numbers(8) == 2
   end
 end
